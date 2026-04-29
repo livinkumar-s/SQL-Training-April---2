@@ -1,0 +1,94 @@
+Database:
+----------
+>> It is an organized collection of data stored. So it can be accessed, modified and updated easily.
+
+RDBMS --> Relational Database Management System
+--------------------------------------------------
+>> Data is stored in form of table(rows and col).
+>> SQL is must
+>> Ex: MySQL, Oracle, PostgreSQL......
+
+DBMS NoSQL DB
+-----
+>> Data is stored in form of documents. JSON
+>> Ex: MangoDB, MariaDB....
+
+MySQL
+------
+>> Open Source RDBMS 
+
+SQL ---> Structured Query Language 
+--------------------------------------
+Syntax 
+-------
+>> Case insensitive. (a=A).
+SELECT * FROM tbname;
+select * from tbname;
+>> ; should be used at the end of each query.(Delimiter)
+
+name, age, dept
+
+Database --> Tables -->Data
+(Schema)    
+
+Student --> Entity(real time object)
+name, age, dept --> attributes
+
+Table ---> Student 
+Columns --> name, age, dept
+
+Datatype 
+-----------
+Numberic Datatypes 
+--------------------
+INT --> Whole numbers 
+FLOAT --> Decimals 
+BIGINT ---> Large whole numbers 
+DOUBLE ---> Large Decimals
+
+String Datatypes 
+------------------
+CHAR(n) --> Fixed length char string. Ex: char(5) --> "hello", "hi hi", "priyanka", "hi"
+VARCHAR(n) --> Variable length Char string ---> Ex: varchar(5) --> "Hi", "Hello", "Livinkumar"
+TEXT ---> Paragraph 
+
+BOOLEAN 
+--------
+BOOLEAN --> 1,0
+
+DATE and TIME 
+--------------
+DATE --> "yyyy-mm-dd". Ex: "2026-04-29"
+TIME --> "HH:MM:SS"
+DATETIME --> Both 
+
+Keys and Constraints 
+----------------------
+Primary Key ----> used to identify each rows uniquely. no empty cells(no null) and no duplicates
+
+
+Queries 
+--------
+To Create Database ---> CREATE DATABSE dbname;
+To Select a db ---> USE dbname;
+To Create Table ---> CREATE TABLE tbname (
+    col1 datatype constraint,
+    col2 datatype constraint,
+    .
+    .
+
+);
+
+actor 
+-------
+name     age   id(PK)
+----------------------
+surya    44    1
+ram      39    2
+surya    39    3
+
+update age=40 1d=3
+
+
+CRUD 
+------
