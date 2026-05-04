@@ -66,6 +66,15 @@ Keys and Constraints
 ----------------------
 Primary Key ----> used to identify each rows uniquely. no empty cells(no null) and no duplicates
 
+Operators
+-----------
+=
+<>, !=
+<
+>
+<=
+>=
+
 
 Queries 
 --------
@@ -79,16 +88,20 @@ To Create Table ---> CREATE TABLE tbname (
 
 );
 
-actor 
--------
-name     age   id(PK)
-----------------------
-surya    44    1
-ram      39    2
-surya    39    3
-
-update age=40 1d=3
-
-
 CRUD 
 ------
+Create ---> INSERT INTO tbname (col detail(optional)) VALUES (),()... 
+Read ----> SELECT (col details) FROM tbname;
+Update ---> UPDATE tbname SET col = val;
+DELETE ---> DELETE FROM tbname; (recoverable when autocommit is off)
+Truncate -> TRUNCATE TABLE tbname; (never recoverable)
+
+SQL_SAFE_UPDATES --> Cannot update or delete more than 1 record. Where clause is must. condition should use PK.
+
+SET SQL_SAKE_UPTATES=1;
+
+WHERE
+------
+>> To do filteration with records.
+Ex: Select, update, delete .... WHERE cond;
+
