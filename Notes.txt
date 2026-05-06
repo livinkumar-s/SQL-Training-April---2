@@ -75,6 +75,45 @@ Operators
 <=
 >=
 
+BETWEEN ---> Check a range of value.(inclusive range)
+Ex: WHERE col BETWEEN val1 AND val2;
+
+IN and NOT IN 
+---------------
+Ex: WHERE col IN (val1,val2....);
+Ex: WHERE col NOT IN (val1,val2....);
+
+Logical Operators 
+-----------------
+AND 
+OR 
+NOT 
+
+LIKE  
+-----
+pattern matching.
+
+Pattern (Wildcard)
+------------------
+% ---> will match 0 to inf char.
+_ ---> will match only one char.
+
+Ex: WHERE col LIKE pattern;
+
+starts with 'v' ---> 'v%' ---> "vijay", "vikram", "v"
+ends with 'a' ---> "%a" --> "trisha"
+5 xhar ends with y --> "____y"
+
+SORTING 
+-------
+>> arranging the records by a col.
+Ex: .... ORDER BY col asc/desc;
+
+LIMIT/OFFSET 
+--------------
+>> limiting the records.
+... LIMIT num;
+offset ---> skips the specified number of records.
 
 Queries 
 --------
