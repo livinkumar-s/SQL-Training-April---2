@@ -144,3 +144,29 @@ WHERE
 >> To do filteration with records.
 Ex: Select, update, delete .... WHERE cond;
 
+Functions of MySQL 
+-------------------
+>> It is predefined operation that takes input, process it, and returns an output.
+
+Numeric Functions 
+------------------
+ROUND(num, dec) ---> round off a dec to closest number. ROUND(10.434687562652, 3) 10.435
+CEIL(num) --> will ceil the dec to an integet.
+FLOOR(num) --> will find floor.
+MOD(num1/num2) --> reminder
+ABS(num) --> absolute number.
+
+String 
+-------
+CONCAT(str,str,....) --> top add multiple strings
+LENGTH(str) --> length of a string
+UPPER(str), LOWER(str)
+REPLACE(str, old, new) --> replacing a substring.
+SUBSTRING(str, start, length) ---> extracting a part of string.
+
+DATE/ TIME 
+----------
+CURDATE() --> returns current date.
+CURTIME() --> returns current time.
+NOW() --> returns the both.
+DATEDIFF(d1,d2) --> difference between 2 dates in days
