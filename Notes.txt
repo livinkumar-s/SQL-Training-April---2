@@ -65,6 +65,15 @@ DATETIME --> Both
 Keys and Constraints 
 ----------------------
 Primary Key ----> used to identify each rows uniquely. no empty cells(no null) and no duplicates
+Foreign Key ----> Create relationship between 2 tables.(prevents invalid references)
+
+AUTO_INCREMENT --> automatically generates sequential numbers. (PK col)
+NOT NULL ---> Ensures a column cannot contain empty value (NULL)
+UNIQUE ---> It ensures all values in a column are unique.
+DEFAULT --> Assigns a default value if user does not peovide one.
+CHECK(cond) --> inserts a record with a condition
+ENUM(val1, val2...) --> restricts values to predefined list.
+
 
 Operators
 -----------
@@ -170,3 +179,22 @@ CURDATE() --> returns current date.
 CURTIME() --> returns current time.
 NOW() --> returns the both.
 DATEDIFF(d1,d2) --> difference between 2 dates in days
+
+
+Cricketer 
+-------------
+id    name              email                     isActive current
+ -----------------------------------------------------------------
+1	Virat Kohli	        virat.kohli@example.com	        1	15
+2	Sachin Tendulkar	sachin.tendulkar@example.com	1	20
+3	MS Dhoni	        ms.dhoni@example.com	        1	12
+4	Rohit Sharma	    rohit.sharma@example.com	    1	18
+5	Viv Richards	    viv@example.com	                0	20
+
+team 
+----
+id   name    playerID(fk -->cric(id))
+----------------------
+1    india     1
+2    WI        5
+3    aus       7(invalid)
