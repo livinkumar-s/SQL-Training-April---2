@@ -198,3 +198,38 @@ id   name    playerID(fk -->cric(id))
 1    india     1
 2    WI        5
 3    aus       7(invalid)
+
+
+
+Joins 
+------
+>> A join is used to combine rows from 2 or more table based on related cols.
+
+Inner Join 
+-----------
+>> Only matching records will be retrived.
+Ex: SELECT col details from TB1 INNER JOIN TB2 ON tb1.col=tb2.col;
+
+Left Outer Join 
+---------------
+>> Returns all records from left table.
+>> only matching record from right table
+Ex: SELECT col details from TB1 LEFT JOIN TB2 ON tb1.col=tb2.col;
+
+Right Outer Join 
+----------------
+>> Returns all records from Right table.
+>> only matching record from Left table
+Ex: SELECT col details from TB1 RIGHT JOIN TB2 ON tb1.col=tb2.col;
+
+Full Outer Join 
+----------------
+>> All records from both tables will be selected.
+SELECT col details from TB1 LEFT JOIN TB2 ON tb1.col=tb2.col
+UNION
+SELECT col details from TB1 RIGHT JOIN TB2 ON tb1.col=tb2.col;
+
+Cross Join 
+------------
+>> All records from right table are matched with all from left.\
+Ex: SELECT * FROM tb1 CROSS JOIN tb2;

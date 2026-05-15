@@ -14,10 +14,9 @@ select * from cricketer;
 
 
 insert into cricketer (name, email, centuries) values 
-("Virat Kohli", "virat.kohli@example.com", 15),
-("Sachin Tendulkar", "sachin.tendulkar@example.com", 20),
-("MS Dhoni", "ms.dhoni@example.com", 12),
-("Rohit Sharma", "rohit.sharma@example.com", 18);
+("Raina", "r@gmailcom", 25),
+("Klassan", "HK@gmailcom", 25),
+("Jadeja", "jad@gmailcom", 15);
 
 
 insert into cricketer (name, email, isActive, centuries) values 
@@ -32,4 +31,4 @@ foreign key (playerId) references cricketer(id)
 
 
 INSERT INTO CricketerTeam (team, playerId) VALUES 
-("India",6);
+("India",9);
