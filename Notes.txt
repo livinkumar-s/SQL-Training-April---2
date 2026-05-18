@@ -233,3 +233,29 @@ Cross Join
 ------------
 >> All records from right table are matched with all from left.\
 Ex: SELECT * FROM tb1 CROSS JOIN tb2;
+
+Aggregation 
+------------
+>> Combining multiple rows and producing single result.
+
+Aggregate Functions
+--------------------
+COUNT(col) --> count the records in a table or counts values in a column(ignores null)
+SUM(col) --> sum of values in a col.
+MAX(col) --> largest
+MIN(col) --> smallest
+AVG(col) --> average value of a col.
+
+Grouping 
+--------
+Combines rows having the same value.
+>> select aggregate()...... GROUP BY colName;
+
+3 Grocessry
+7 Gadget
+5 Furniture
+
+HAVING 
+---------
+>> Filters the group.
+>> ........HAVING condition
