@@ -259,3 +259,27 @@ HAVING
 ---------
 >> Filters the group.
 >> ........HAVING condition
+
+Subqueries 
+------------
+>> A subquery written inside another.
+it is also called as nested query or inner query.
+>> inner query will get executed first.
+
+Ex: query...... (subquery)
+
+Single Row subquery
+--------------------
+>> returns only one row.
+
+Multiple Row subquery
+--------------------
+>> returns more than one row.
+
+IN
+ANY --> condition must satisfy with 1 value
+ALL  --> all value
+
+Correlated Subquery 
+-------------------
+>> Subquery that depends on the outer query
