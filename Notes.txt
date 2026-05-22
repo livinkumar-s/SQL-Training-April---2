@@ -153,6 +153,23 @@ WHERE
 >> To do filteration with records.
 Ex: Select, update, delete .... WHERE cond;
 
+ALTER
+------
+>> Used to Modify structure of an existing table.
+ALTER TABLE tbname alteration;
+To add new col --> ALTER TABLE tbname ADD colName datatype, ADD .....
+To add it in specific position ---> AFTER, FIRST
+To drop a column ---> .....DROP COLUMN colName;
+To modify a column(datatype) --> ... MODIFY colName modifiedDatatype;
+To Rename a column ---> .... CHANGE oldColName newColName datatype;
+To Rename (above 8) --> ... RENAME COLUMN old TO new;
+To add constraint --> .... ADD PRIMARY KEY(colName);
+To add Foreign key --> .. ADD CONSTRAINT fk FOREIGN KEY (col) REFERENCES colDetail;
+To Drop Constraint ---> ...DROP PRIMARY KEY; ...DROP FOREIGN KEY fk;
+
+To Drop a table --> DROP TABLE tbName;
+To Drop a Database ---> DROP DATABASE dbName;
+
 Functions of MySQL 
 -------------------
 >> It is predefined operation that takes input, process it, and returns an output.
@@ -179,26 +196,6 @@ CURDATE() --> returns current date.
 CURTIME() --> returns current time.
 NOW() --> returns the both.
 DATEDIFF(d1,d2) --> difference between 2 dates in days
-
-
-Cricketer 
--------------
-id    name              email                     isActive current
- -----------------------------------------------------------------
-1	Virat Kohli	        virat.kohli@example.com	        1	15
-2	Sachin Tendulkar	sachin.tendulkar@example.com	1	20
-3	MS Dhoni	        ms.dhoni@example.com	        1	12
-4	Rohit Sharma	    rohit.sharma@example.com	    1	18
-5	Viv Richards	    viv@example.com	                0	20
-
-team 
-----
-id   name    playerID(fk -->cric(id))
-----------------------
-1    india     1
-2    WI        5
-3    aus       7(invalid)
-
 
 
 Joins 
@@ -283,3 +280,17 @@ ALL  --> all value
 Correlated Subquery 
 -------------------
 >> Subquery that depends on the outer query
+
+Views  
+-------
+>> Virtual Table creeated using a SQL query.
+It does not store data seperately. It always shows latest data from the original table.
+
+To Create View  ---> CREATE VIEW viewName as SELECT.....
+
+Purpose 
+---------
+Security  -> restricts sensitive columns 
+Simplicity --> Complex joins can be hidden invide a view...
+
+COMMIT, AUTOCOMMIT, ROLLBACK
