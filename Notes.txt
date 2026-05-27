@@ -330,3 +330,44 @@ query
 
 COMMIT;
 ROLLBACK to s2;
+
+
+IF
+----
+If function
+IF statement --> can be used only within stored procedure
+IF condition THEN 
+Queries
+.
+.
+ELIF CONDITION THEN 
+Queries 
+.
+.
+.
+ELSE 
+Queries 
+.
+.
+END IF
+
+Stored Procedures 
+-------------------
+Coollection of SQL statements stored inside the DB;
+
+Syntax 
+---------
+DELIMITER $$
+
+CREATE PROCEDURE proName()
+BEGIN  
+  --SQL STATEMENT;
+  --SQL STATEMENT;
+  --SQL STATEMENT;
+  --SQL STATEMENT;
+END $$
+
+DELIMITER ;
+
+Calling it --> CALL proName()
+
