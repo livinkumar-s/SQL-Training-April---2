@@ -294,3 +294,39 @@ Security  -> restricts sensitive columns
 Simplicity --> Complex joins can be hidden invide a view...
 
 COMMIT, AUTOCOMMIT, ROLLBACK
+
+Transaction 
+-------------
+> Group of SQL statements executed as a single unit of work.
+
+Syntax 
+---------
+START TRANSACTION;
+query
+.
+.
+.
+COMMIT;
+ROLLBACK;
+
+Savepoint 
+-----------
+it is used to create checkpoint inside transaction;
+
+START TRANSACTION;
+query
+query
+
+SAVEPOINT s1;
+
+query
+query
+query
+
+SAVEPOINT s2
+
+query
+query
+
+COMMIT;
+ROLLBACK to s2;
